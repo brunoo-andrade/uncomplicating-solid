@@ -6,12 +6,12 @@ public class App {
         RoboSam roboSam = new RoboSam("cafe", "acucar");
         RoboEden roboFilhoDeSam = new RoboEden("agua", "acucar");
 
-        String cafe = pegarCafe(roboSam);
-        String cafe2 = pegarCafe(roboFilhoDeSam);
+        pegarCafe(roboSam);
+        pegarCafe(roboFilhoDeSam);
     }
 
-    private static String pegarCafe(RoboSam robo) {
-        return robo.fazerCafe();
+    private static void pegarCafe(RoboSam robo) {
+        System.out.println(robo.fazerCafe());
     }
 
 }

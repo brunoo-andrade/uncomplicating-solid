@@ -11,7 +11,7 @@ public class RoboSam {
     }
 
     public String fazerCafe() {
-        return cafe + "+" + acucar;
+        return "Aqui está o café: " + cafe + "+" + acucar;
     }
 
 }
