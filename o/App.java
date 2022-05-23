@@ -20,6 +20,7 @@ public class App {
 
     private static void executar(RoboCozinheiro robo, Acao acao) {
         System.out.println(robo.getNome() + " vai " + acao.toString());
+        
         if (acao.equals(Acao.CORTAR)) {
             robo.cortarBolo();
         } else if (acao.equals(Acao.PINTAR)) {
