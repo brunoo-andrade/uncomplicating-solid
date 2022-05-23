@@ -1,7 +1,9 @@
 package s;
 
-// SRP Violation
-// Violação do Princípio da Responsabilidade Única
+/**
+ * SRP Violation
+ * Violação do Princípio da Responsabilidade Única
+ */
 public class RoboCozinheiroJardineiroPintorMotorista {
 
     private String tempero;
@@ -23,7 +25,9 @@ public class RoboCozinheiroJardineiroPintorMotorista {
         this.tempero = tempero;
         this.comida = comida;
         this.planta = planta;
+        this.adubo = adubo;
         this.parede = parede;
+        this.tinta = tinta;
         this.destino = destino;
         this.carro = carro;
 
