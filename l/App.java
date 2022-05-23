@@ -4,7 +4,7 @@ public class App {
     
     public static void main(String[] args) {
         RoboSam roboSam = new RoboSam("cafe", "acucar");
-        RoboEden roboFilhoDeSam = new RoboEden("agua", "acucar");
+        RoboEden roboFilhoDeSam = new RoboEden("agua", "acucar", "cafe", "leite");
 
         pegarCafe(roboSam);
         pegarCafe(roboFilhoDeSam);

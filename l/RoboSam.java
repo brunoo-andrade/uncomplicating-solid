@@ -2,7 +2,7 @@ package l;
 
 public class RoboSam {
     
-    private String cafe;
+    protected String cafe;
     protected String acucar;
 
     public RoboSam(String cafe, String acucar) {

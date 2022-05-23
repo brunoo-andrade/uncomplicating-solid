@@ -1,33 +1,30 @@
 package l;
 
 /**
- * LSP Violation
- * Violação do Princípio da Substituição de Liskov
+ * LSP Refactoring
+ * Refatoração da classe para seguir o Princípio da Substituição de Liskov
  */
 public class RoboEden extends RoboSam {
 
     private String agua;
+    private String leite;
 
-    public RoboEden(String agua, String acucar) {
-        super(null, acucar);
+    public RoboEden(String agua, String acucar, String cafe, String leite) {
+        super(cafe, acucar);
 
         this.agua = agua;
+        this.leite = leite;
     }
 
     @Override
     public String fazerCafe() {
-        try {
-            throw new Exception("Aceita uma água doce?");
-        } catch (Exception e) {
-            // TODO Auto-generated catch block
-            e.printStackTrace();
-        }
+        String capuccino = this.cafe + "+" + this.leite + "+" + this.acucar;
 
-        return fazerAguaDoce();
+        return "Aqui está um capuccino: " + capuccino;
     }
 
     public String fazerAguaDoce() {
-        return "aqui está a água doce: " + agua + "+" + this.acucar;
+        return "Aqui está a água doce: " + agua + "+" + this.acucar;
     }
     
 }
