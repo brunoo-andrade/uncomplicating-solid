@@ -27,7 +27,7 @@ public class RoboEden extends RoboSam {
     }
 
     public String fazerAguaDoce() {
-        return agua + "+" + this.acucar;
+        return "aqui está a água doce: " + agua + "+" + this.acucar;
     }
     
 }
