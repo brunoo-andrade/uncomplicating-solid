@@ -1,0 +1,17 @@
+package l;
+
+public class RoboSam {
+    
+    private String cafe;
+    protected String acucar;
+
+    public RoboSam(String cafe, String acucar) {
+        this.cafe = cafe;
+        this.acucar = acucar;
+    }
+
+    public String fazerCafe() {
+        return cafe + "+" + acucar;
+    }
+
+}
